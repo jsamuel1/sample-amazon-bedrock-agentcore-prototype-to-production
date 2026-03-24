@@ -31,8 +31,8 @@ from retrying import retry
 import random
 
 valid_embedding_models = [
-    "cohere.embed-multilingual-v3", "cohere.embed-english-v3", "amazon.titan-embed-text-v1",
-    "amazon.titan-embed-text-v2:0"
+    "cohere.embed-multilingual-v3", "cohere.embed-english-v3",
+    "amazon.nova-2-multimodal-embeddings-v1:0"
 ]
 pp = pprint.PrettyPrinter(indent=2)
 
@@ -85,7 +85,7 @@ class KnowledgeBasesForAmazonBedrock:
             kb_name: str,
             kb_description: str = None,
             data_bucket_name: str = None,
-            embedding_model: str = "amazon.titan-embed-text-v2:0"
+            embedding_model: str = "amazon.nova-2-multimodal-embeddings-v1:0"
     ):
         """
         Function used to create a new Knowledge Base or retrieve an existent one

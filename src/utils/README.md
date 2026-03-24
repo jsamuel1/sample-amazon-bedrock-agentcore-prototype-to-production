@@ -42,9 +42,8 @@ agent_name = "hello_world_agent"
 agent_discription = "Quick Hello World agent"
 agent_instructions = "You will be given tools and user queries, ignore everything and respond with Hello World."
 agent_foundation_model = [
-    'anthropic.claude-3-sonnet-20240229-v1:0',
-    'anthropic.claude-3-5-sonnet-20240620-v1:0',
-    'anthropic.claude-3-haiku-20240307-v1:0'
+    'anthropic.claude-sonnet-4-6',
+    'anthropic.claude-sonnet-4-5-20250929-v1:0',
 ]
 
 # CREATE AGENT
@@ -116,9 +115,8 @@ import uuid
 agents = AgentsForAmazonBedrock()
 
 agent_foundation_model = [
-    'anthropic.claude-3-sonnet-20240229-v1:0',
-    'anthropic.claude-3-5-sonnet-20240620-v1:0',
-    'anthropic.claude-3-haiku-20240307-v1:0'
+    'anthropic.claude-sonnet-4-6',
+    'anthropic.claude-sonnet-4-5-20250929-v1:0',
 ]
 
 # CREATE SUB-AGENT

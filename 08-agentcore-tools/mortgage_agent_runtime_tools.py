@@ -42,7 +42,7 @@ session = boto3.Session()
 region = session.region_name
 print(f"current region: {region}")
 
-modelID="us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+modelID="us.anthropic.claude-sonnet-4-6"
 
 # get the kb id from AWS SSM
 def setup_knowledge_base():
